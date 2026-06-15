@@ -94,3 +94,4 @@ coverage.xml
 *.bak
 *.swp
 .#*
+.env*
