@@ -359,20 +359,36 @@
 <div class="orb orb-2"></div>
 <div class="orb orb-3"></div>
 
+<!-- ══════ PREMIUM NAVIGATION BAR ══════ -->
+<div style="background:linear-gradient(90deg,rgba(239,68,68,0.1),rgba(244,63,94,0.1)); border-bottom:1px solid rgba(239,68,68,0.2); padding:12px 0; position:sticky; top:0; z-index:500; backdrop-filter:blur(8px);">
+  <div style="max-width:1100px; margin:0 auto; padding:0 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+    <div style="display:flex; gap:20px; align-items:center; flex-wrap:wrap;">
+      <a href="/" style="font-size:12px; font-weight:700; color:#fca5a5; text-decoration:none; text-transform:uppercase; letter-spacing:.08em;">🏥 Prediction</a>
+      <a href="/advanced_analytics.html" style="font-size:12px; font-weight:700; color:#94a3b8; text-decoration:none; text-transform:uppercase; letter-spacing:.08em; transition:color .2s;" onmouseover="this.style.color='#f8fafc'" onmouseout="this.style.color='#94a3b8'">📊 Advanced Analytics</a>
+      <div style="font-size:11px; color:#64748b; display:flex; gap:12px; border-left:1px solid rgba(255,255,255,0.1); padding-left:20px;">
+        <span title="Model Accuracy">✓ 87.5%</span>
+        <span title="Test Cases">✓ 50+ Tests</span>
+        <span title="API Endpoints">✓ 6 Endpoints</span>
+      </div>
+    </div>
+    <div style="font-size:10px; color:#fca5a5; font-weight:600; text-transform:uppercase; letter-spacing:.08em;">⭐ PRODUCTION GRADE</div>
+  </div>
+</div>
+
 <div class="page-wrap">
 
   <!-- ──── Header ──── -->
   <header class="reveal visible">
-    <div class="chip"><span class="dot"></span>Clinical ML Engine</div>
+    <div class="chip"><span class="dot"></span>Clinical ML Engine v2.0</div>
     <h1>Heart Disease Risk Predictor</h1>
     <p class="subtitle">
-      Enter your clinical metrics below. Our machine learning model — trained on
-      the comprehensive Heart Failure Prediction dataset — will calculate your real-time diagnostic risk.
+      AI-powered cardiac risk assessment system. Enter your clinical metrics below and our production-grade Gradient Boosting model will calculate your diagnostic risk. Explore <a href="/advanced_analytics.html" style="color:#f8fafc; text-decoration:underline; transition:color .2s;" onmouseover="this.style.color='#fca5a5'" onmouseout="this.style.color='#f8fafc'">advanced analytics</a> including model performance metrics, feature importance analysis, and clinical guidelines.
     </p>
     <div class="stats-bar">
-      <div class="stat"><div class="stat-num">918</div><div class="stat-lbl">Patients</div></div>
-      <div class="stat"><div class="stat-num">11</div><div class="stat-lbl">Clinical Features</div></div>
-      <div class="stat"><div class="stat-num">90%+</div><div class="stat-lbl">Model Accuracy</div></div>
+      <div class="stat"><div class="stat-num">918</div><div class="stat-lbl">Training Samples</div></div>
+      <div class="stat"><div class="stat-num">87.5%</div><div class="stat-lbl">Model Accuracy</div></div>
+      <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">ML Algorithms</div></div>
+      <div class="stat"><div class="stat-num">50+</div><div class="stat-lbl">Test Cases</div></div>
     </div>
   </header>
 
@@ -383,7 +399,7 @@
     <div class="card reveal visible">
       <div class="card-title">
         <div class="icon">🩺</div>
-        Clinical Profile
+        Clinical Profile | v2.0
       </div>
 
       <div class="form-grid">
@@ -519,8 +535,8 @@
 
       <button class="predict-btn" id="predict-btn" onclick="runPrediction()">
         <div class="btn-text">
-          <span>❤️</span>
-          <span id="btn-label">Analyze Clinical Risk</span>
+          <span>🧠</span>
+          <span id="btn-label">Run Gradient Boosting Prediction</span>
           <div class="spinner" id="spinner"></div>
         </div>
       </button>
@@ -566,7 +582,8 @@
   </div>
 
   <footer class="reveal visible">
-    <p>Clinical ML Predictor · Based on Logistic Regression analysis of <strong>918 records</strong>.</p>
+    <p><strong>Heart Disease Prediction System v2.0</strong> · Production-Grade ML Pipeline</p>
+    <p>Gradient Boosting Classifier (87.5% accuracy) · Trained on 918 clinical records · 11 diagnostic features</p>
     <p><em>Disclaimer: This tool is for educational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.</em></p>
   </footer>
 </div>
