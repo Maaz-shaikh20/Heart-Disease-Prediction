@@ -1,3 +1,9 @@
 {
-  "name": "heart-prediction"
+  "name": "heart-prediction",
+  "buildCommand": "echo 'Static site - no build needed'",
+  "outputDirectory": ".",
+  "public": true,
+  "github": {
+    "silent": true
+  }
 }
